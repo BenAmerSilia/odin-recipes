@@ -15,7 +15,7 @@ header {
   padding: 20px 0;
 }
 
-h1 {
+h1,h4 {
   font-family: "Montserrat", sans-serif; /* Use the desired font family */
   font-size: 36px; /* Adjust the font size as needed */
   font-weight: bold;
@@ -30,7 +30,7 @@ main {
   padding: 20px 0;
 }
 
-.recipe-category {
+.recipe-category,.recipe-image, .image-of-recipe {
   text-align: center;
   border: 2px solid #ccc; /* Add a border around the figure */
   border-radius: 8px; /* Add rounded corners to the figure */
@@ -38,7 +38,7 @@ main {
 }
 
 /* Add space between the images and captions */
-.recipe-category img {
+.recipe-category img ,.recipe-image img{
   margin-bottom: 10px;
   max-width: 100%; /* Ensure the images fit within their containers */
   border-radius: 8px; /* Add rounded corners to the images */
@@ -46,8 +46,56 @@ main {
 }
 
 /* Style the recipe category captions (e.g., Sweets, Salty Recipes) */
-.recipe-category a {
+.recipe-category a ,.recipe-image a, .recipe-page a{
   font-family: "Roboto", sans-serif; /* Use a font family that complements the heading */
   font-size: 24px; /* Adjust the font size as needed */
   color: #555; /* Choose a color that complements the design */
 }
+
+/* ...Previous CSS code... */
+
+/* Style the single recipe page */
+.recipe-page {
+  max-width: 800px; /* Limit the width of the recipe page for better readability */
+  margin: 0 auto; /* Center the content horizontally */
+  padding: 20px; /* Add some padding around the content */
+}
+
+/* Style the recipe name */
+.recipe-page header h1 {
+  margin-top: -10px;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px; /* Add some space between the heading and the image */
+}
+
+/* Style the finished dish image */
+.recipe-page header img {
+  width: 350px;
+  height: 350px;
+  display: block; 
+  max-width: 100%; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  margin: 0 auto 20px; 
+}
+
+/* Style the description */
+.recipe-page  h4 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px; /* Add some space between the heading and the paragraph */
+}
+
+.recipe-page header p, .recipe-page ul, .recipe-page ol , .recipe-page li {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.6; /* Adjust the line height for better readability */
+  margin-bottom: 10px; /* Add some space between paragraphs */
+}
+
+
+
+
+
+/* ...Previous CSS code... */
