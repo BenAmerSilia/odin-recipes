@@ -1,0 +1,53 @@
+/* Reset default margin and padding for consistency */
+body, h1, h2, p, img, figure, figcaption {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set the background color or use a background image/pattern */
+body {
+  background-color: #f9f9f9; /* Replace with your chosen background color */
+}
+
+/* Style the header and the heading */
+header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif; /* Use the desired font family */
+  font-size: 36px; /* Adjust the font size as needed */
+  font-weight: bold;
+  color: #333; /* Choose a color that complements your design */
+}
+
+/* Create a layout for the recipe categories */
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start; /* Align the figures at the top of the flex container */
+  padding: 20px 0;
+}
+
+.recipe-image {
+  text-align: center;
+  border: 2px solid #ccc; /* Add a border around the figure */
+  border-radius: 8px; /* Add rounded corners to the figure */
+  padding: 10px; /* Add some padding inside the figure */
+}
+
+/* Add space between the images and captions */
+.recipe-image img {
+  margin-bottom: 10px;
+  max-width: 100%; /* Ensure the images fit within their containers */
+  border-radius: 8px; /* Add rounded corners to the images */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow to the images */
+}
+
+/* Style the recipe image captions (e.g., Sweets, Salty Recipes) */
+.recipe-image a {
+  font-family: "Roboto", sans-serif; /* Use a font family that complements the heading */
+  font-size: 24px; /* Adjust the font size as needed */
+  color: #555; /* Choose a color that complements the design */
+}
